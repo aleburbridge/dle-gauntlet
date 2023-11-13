@@ -69,7 +69,7 @@ const MainPage = () => {
           console.error(`Error saving ${gameName} result:`, error);
         });
     } else {
-      console.log("User is not authenticated. Please log in.");
+      console.log("User is not authenticated! Please log in.");
     }
   }
   
