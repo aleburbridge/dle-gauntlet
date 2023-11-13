@@ -3,13 +3,14 @@
 }
 
 body {
-  background-color: #202020;
+  background-color: #1d1d1d;
   color: #fff;
 }
 
 .dark-input, .dark-input:active {
   background-color: #525252 !important;
   color: white !important;
+  border: none;
 }
 
 .dark-input::placeholder {

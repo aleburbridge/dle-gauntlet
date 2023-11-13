@@ -30,8 +30,8 @@ const Leaderboard = () => {
   }, []);
 
   return (
-    <div>
-        <h3>Results for today, {}</h3>
+    <div className='mt-3'>
+        <h5>Results for today, {new Date().toLocaleDateString()}</h5>
         {results.map((result) => (
         <div key={result.userId}>
             {result.userId}: {result.input_value}

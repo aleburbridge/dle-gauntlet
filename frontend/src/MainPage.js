@@ -75,6 +75,7 @@ const MainPage = () => {
   
   return (
     <div className="container">
+      <p>Signed in as {auth.currentUser.email}</p>
       <Button variant="danger" onClick={() => openAllLinks()}>OPEN THE GAUNTLET</Button>
       <div className="w-50 mx-auto">
         {gameInputs.map((inputConfig, index) => (
