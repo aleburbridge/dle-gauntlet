@@ -16,23 +16,25 @@ const GameInput = ({ label, placeholder, link, onSubmit }) => {
   };
 
   return (
-    <Form.Group controlId={label.toLowerCase()}>
-      <InputGroup className='mt-4'>
-        <Button variant="secondary" href={link} target="_blank">
-          Link
-        </Button>
-        <Form.Control
-          type="text"
-          placeholder={placeholder}
-          value={inputValue}
-          onChange={handleInputChange}
-          className='dark-input'
-        />
-        <Button variant="outline-danger" onClick={handleFormSubmit}>
-          Submit
-        </Button>
-      </InputGroup>
-    </Form.Group>
+    <div className="mx-auto custom-width">
+      <Form.Group controlId={label.toLowerCase()}>
+        <InputGroup className='mt-4'>
+          <Button variant="secondary" href={link} target="_blank">
+            Link
+          </Button>
+          <Form.Control
+            type="text"
+            placeholder={placeholder}
+            value={inputValue}
+            onChange={handleInputChange}
+            className='dark-input'
+          />
+          <Button variant="outline-danger" onClick={handleFormSubmit}>
+            Submit
+          </Button>
+        </InputGroup>
+      </Form.Group>
+    </div>
   );
 };
 

@@ -27,18 +27,19 @@ const Login = () => {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className='dark-input'
         /><br/>
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className='dark-input mt-2'
         /><br/>
         <Button className="mt-2" type="submit">Login</Button>
       </form>
-      <p>
-        <Link to="/register">Register</Link>
-      </p>
+      <Link to="/register">Register</Link>
+      <p><a href="https://zombo.com/" target="_blank">Forgot your password? Too bad I don't know how to reset those yet</a></p>
     </div>
   );
   

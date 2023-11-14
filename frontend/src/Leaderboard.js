@@ -34,7 +34,7 @@ const Leaderboard = () => {
         <h5>Results for today, {new Date().toLocaleDateString()}</h5>
         {results.map((result) => (
         <div key={result.userId}>
-            {result.userId}: {result.input_value}
+            {result.username}: {result.input_value}
         </div>
         ))}
     </div>

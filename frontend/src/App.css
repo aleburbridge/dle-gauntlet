@@ -17,14 +17,13 @@ body {
   color: rgb(172, 172, 172);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-width {
+  width: 50%; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .custom-width {
+    width: 100% !important;
   }
 }
 
